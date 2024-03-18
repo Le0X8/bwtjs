@@ -1,0 +1,35 @@
+{
+  "name": "nodebwt",
+  "version": "1.0.1",
+  "description": "Burrows-Wheeler transform for Node.js",
+  "main": "dist/main.js",
+  "types": "main.d.ts",
+  "author": "Leonard Lesinski",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "terser": "^5.29.2",
+    "typescript": "^5.4.2"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "main.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Le0X8/nodebwt"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Le0X8/nodebwt#readme",
+  "bugs": "https://github.com/Le0X8/nodebwt/issues",
+  "keywords": [
+    "bwt",
+    "burrows-wheeler",
+    "transform",
+    "compression"
+  ],
+  "scripts": {
+    "build": "tsc && terser dist/main.js -o dist/main.js"
+  }
+}
